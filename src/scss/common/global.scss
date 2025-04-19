@@ -1,0 +1,39 @@
+@use '../env' as *;
+
+body {
+	--color-back: #faf5ee;
+	--color-blacky: #555555;
+	--font-accent: 'Verdana', serif;
+
+	min-width: 320px;
+	margin: 0;
+	overflow: hidden scroll;
+	font-size: 18px;
+	line-height: 1.1667;
+	font-family: 'Times New Roman', serif;
+	font-feature-settings:
+		'tnum' on,
+		'lnum' on;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: transparent;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	font-family: var(--font-accent);
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	text-decoration-skip-ink: none;
+	color: #000080;
+
+	@include hover {
+		text-decoration: underline;
+	}
+}

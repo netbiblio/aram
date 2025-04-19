@@ -1,0 +1,26 @@
+.work {
+	p {
+		margin: 0;
+		padding-left: 1.5em;
+		text-indent: -1.5em;
+	}
+
+	time {
+		display: block;
+		margin-top: 21px;
+		text-align: right;
+	}
+
+	.separated {
+		margin-top: 21px;
+	}
+}
+
+.work__subtitle {
+	margin: 0 0 15px;
+}
+
+.work__poem {
+	display: table;
+	margin: 0 auto;
+}

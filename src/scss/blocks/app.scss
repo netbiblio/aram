@@ -1,0 +1,48 @@
+@use '../env' as *;
+
+.app {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 10px;
+	background-color: #ecd6b2;
+}
+
+.app__main {
+	flex-grow: 1;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 791px;
+	margin: 0 auto 10px;
+	padding: 30px 20px 40px;
+	background-color: #ffffff;
+	border: 1px solid;
+	border-right: var(--color-blacky) 2px outset;
+	border-bottom: var(--color-blacky) 2px outset;
+
+	@include desktop {
+		padding-inline: 30px;
+	}
+}
+
+.app__title {
+	margin: 0 0 30px;
+	padding: 10px;
+	font-weight: 700;
+	font-size: 19px;
+	line-height: 23px;
+	font-family: var(--font-accent);
+	text-align: center;
+	background-color: var(--color-back);
+	border-top: 1px solid var(--color-blacky);
+	border-bottom: 1px solid var(--color-blacky);
+}
+
+.app__footer {
+	padding: 10px;
+	font-size: 10px;
+	line-height: 12px;
+	font-family: var(--font-accent);
+	text-align: center;
+}
